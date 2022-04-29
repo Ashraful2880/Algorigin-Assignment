@@ -1,0 +1,164 @@
+[
+    {
+        "Date Updated": "11 Nov 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 300,
+        "Remaining": 200,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "10 Nov 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 230,
+        "Remaining": 122,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "6 Nov 2021",
+        "Title": "Hammer",
+        "Details": "Wood Plan will be used to do woodworks,duh",
+        "Status": "In Progress",
+        "Quantity": 300,
+        "Remaining": 100,
+        "Unit Price": 1.5
+    },
+    {
+        "Date Updated": "28 Oct 2021",
+        "Title": "Hammer",
+        "Details": "-",
+        "Status": "Out Of Stock",
+        "Quantity": 200,
+        "Remaining": 0,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "22 Oct 2021",
+        "Title": "Hammer",
+        "Details": "-",
+        "Status": "Out Of Stock",
+        "Quantity": 200,
+        "Remaining": 0,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "16 Oct 2021",
+        "Title": "Hammer",
+        "Details": "-",
+        "Status": "Out Of Stock",
+        "Quantity": 200,
+        "Remaining": 0,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "09 Oct 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 300,
+        "Remaining": 200,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "05 Oct 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 300,
+        "Remaining": 200,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "01 Oct 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 300,
+        "Remaining": 200,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "23 Sep 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 300,
+        "Remaining": 200,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "10 Sep 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 300,
+        "Remaining": 200,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "02 Sep 2021",
+        "Title": "Hammer",
+        "Details": "-",
+        "Status": "Out Of Stock",
+        "Quantity": 200,
+        "Remaining": 0,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "27 Aug 2021",
+        "Title": "Hammer",
+        "Details": "-",
+        "Status": "Out Of Stock",
+        "Quantity": 200,
+        "Remaining": 0,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "16 Aug 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 300,
+        "Remaining": 200,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "6 Aug 2021",
+        "Title": "Hammer",
+        "Details": "This is a hammer to do work with",
+        "Status": "Alright",
+        "Quantity": 300,
+        "Remaining": 200,
+        "Unit Price": 10
+    },
+    {
+        "Date Updated": "28 July 2021",
+        "Title": "Hammer",
+        "Details": "Wood Plan will be used to do woodworks,duh",
+        "Status": "In Progress",
+        "Quantity": 300,
+        "Remaining": 100,
+        "Unit Price": 1.5
+    },
+    {
+        "Date Updated": "14 July 2021",
+        "Title": "Hammer",
+        "Details": "Wood Plan will be used to do woodworks,duh",
+        "Status": "In Progress",
+        "Quantity": 300,
+        "Remaining": 100,
+        "Unit Price": 1.5
+    },
+    {
+        "Date Updated": "06 July 2021",
+        "Title": "Hammer",
+        "Details": "Wood Plan will be used to do woodworks,duh",
+        "Status": "In Progress",
+        "Quantity": 300,
+        "Remaining": 100,
+        "Unit Price": 1.5
+    }
+]
