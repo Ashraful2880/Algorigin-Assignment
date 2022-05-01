@@ -12,7 +12,7 @@ const Header = () => {
                 <img className="ml-[7px] mr-[7px]" src={arrow} alt="Down Arrow" />
                 <div className="relative lg:ml-[128px] md:ml-[10px] hidden sm:block">
                     <div className="flex absolute inset-y-0 left-0 items-center pl-3">
-                        <img className=' w-[16.67px] h-[16.67px]' src={search} alt="Search Icon" />
+                        <img className='w-[16.67px] h-[16.67px]' src={search} alt="Search Icon" />
                     </div>
                     <input type="text" className="w-[392px] h-10 pl-10 bg-[#F2F2F3] rounded-[8px]" placeholder="Search..." />
                 </div>
