@@ -13,13 +13,11 @@ const Inventory = () => {
         <div className="bg-[#F2F2F3] h-screen">
             <h1 className="text-left text-[#3E3F48] text-[20px] font-[700] h-[49px] border-b border-b-[#E5E5E6] pl-[24px] pt-[4px]">Inventory</h1>
             <div className="bg-white m-[24px] rounded-[4px] shadow-md">
-                {/* <div className="w-full my-5">
-                    <div className="relative ">
-                        <div className="flex absolute inset-y-0 left-0 items-center pl-3">
-                            <img className='w-[16.67px] h-[16.67px]' src={search} alt="Search Icon" />
-                        </div>
-                        <input type="text" className="w-[392px] h-10 pl-10 bg-[#F2F2F3] rounded-[8px]" placeholder="Search..." />
+                {/* <div className="relative">
+                    <div className="flex absolute inset-y-0 left-0 items-center pl-3">
+                        <img className='w-[16.67px] h-[16.67px]' src={search} alt="Search Icon" />
                     </div>
+                    <input type="text" className="w-[392px] h-10 pl-10 bg-[#F2F2F3] rounded-[8px]" placeholder="Search..." />
                 </div> */}
                 <div className="sm:-mx-6 lg:-mx-8">
                     <div className=" align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -81,7 +79,15 @@ const Inventory = () => {
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    <div className="text-[16px] text-[#3E3F48]">{item?.Status}</div>
+                                                    <div className="text-[16px] text-[#3E3F48]">
+                                                        {item?.Status}
+                                                        {
+                                                            item.Status === "Alright" ?
+                                                                <span className=' inline-block ml-[8px] bg-[#44C776] h-2 w-2 rounded-full'></span> :
+                                                                <span className=' inline-block ml-[8px] bg-[#F58A28] h-2 w-2 rounded-full'></span>
+                                                        }
+                                                        {/* <span className=' inline-block ml-[8px] bg-[#F52828] h-2 w-2 rounded-full'></span> */}
+                                                    </div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
@@ -95,13 +101,6 @@ const Inventory = () => {
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
-                                                {/* <div className="flex items-center">
-                                                    {
-                                                        item.status === "Active" ?
-                                                            <div className="text-[16px] text-[#3E3F48] bg-green-200 px-2 rounded-lg">{item.status}</div> :
-                                                            <div className="text-[16px] text-[#3E3F48] bg-red-300 px-2 rounded-lg">{item.status}</div>
-                                                    }
-                                                </div> */}
                                                 <div className="flex items-center">
                                                     <div className="text-[16px] text-[#3E3F48]">${item?.Unit_Price * item?.Remaining}.00</div>
                                                 </div>
