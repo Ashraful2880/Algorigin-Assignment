@@ -22,35 +22,35 @@ const Inventory = () => {
                     </div>
                 </div> */}
                 <div className="sm:-mx-6 lg:-mx-8">
-                    <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                    <div className=" align-middle inline-block min-w-full sm:px-6 lg:px-8">
                         <div className="shadow overflow-hidden sm:rounded-lg">
                             <table className="min-w-full">
                                 <thead className='bg-[#FDF4ED]'>
                                     <tr>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                                        <th scope="col" className="px-6 py-3 text-left">
                                             <input type="checkbox" />
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
                                             <span>Date Updated</span>
                                             <img className="inline ml-[6px]" src={arrow} alt="arrow" />
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
                                             <span>Title</span>
                                             <img className="inline ml-[4px]" src={arrow} alt="arrow" />
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
                                             Details
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
                                             Status
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
                                             Quantity
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
                                             Unit Price
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
                                             <span>Amount</span>
                                             <img className="inline ml-[4px]" src={arrow} alt="arrow" />
                                         </th>
@@ -66,41 +66,44 @@ const Inventory = () => {
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    <div className="text-sm font-medium text-gray-900">{item?.Date_Updated}</div>
+                                                    <div className=" text-[16px] text-[#3E3F48]">{item?.Date_Updated}</div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    <div className="text-sm font-medium text-gray-900">{item?.Title}</div>
+                                                    <div className="text-[16px] text-[#3E3F48]">{item?.Title}</div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    <div className="text-sm font-medium text-gray-900">{item?.Details}</div>
+                                                    <div className="text-[16px] text-[#3E3F48]">{item?.Details}</div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    <div className="text-sm font-medium text-gray-900">{item?.Status}</div>
+                                                    <div className="text-[16px] text-[#3E3F48]">{item?.Status}</div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    <div className="text-sm font-medium text-gray-900">{item?.Quantity}</div>
+                                                    <div className="text-[16px] text-[#3E3F48]"> <span className="font-bold">{item?.Remaining}</span> / {item?.Quantity}</div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    <div className="text-sm font-medium text-gray-900">{item?.Unit_Price}</div>
+                                                    <div className="text-[16px] text-[#3E3F48]">${item?.Unit_Price}</div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className="flex items-center">
+                                                {/* <div className="flex items-center">
                                                     {
                                                         item.status === "Active" ?
-                                                            <div className="text-sm font-medium text-gray-900 bg-green-200 px-2 rounded-lg">{item.status}</div> :
-                                                            <div className="text-sm font-medium text-gray-900 bg-red-300 px-2 rounded-lg">{item.status}</div>
+                                                            <div className="text-[16px] text-[#3E3F48] bg-green-200 px-2 rounded-lg">{item.status}</div> :
+                                                            <div className="text-[16px] text-[#3E3F48] bg-red-300 px-2 rounded-lg">{item.status}</div>
                                                     }
+                                                </div> */}
+                                                <div className="flex items-center">
+                                                    <div className="text-[16px] text-[#3E3F48]">${item?.Unit_Price * item?.Remaining}.00</div>
                                                 </div>
                                             </td>
                                         </tr>
