@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import search from '../../../Images/Search.png';
 import arrow from '../../../Images/Arrow.png';
+import SearchBar from '../../SearchBar/SearchBar';
+import Pagination from './../../Pagination/Pagination';
 
 const Inventory = () => {
     const [items, setItems] = useState([]);
@@ -13,14 +14,11 @@ const Inventory = () => {
         <div className="bg-[#F2F2F3] h-screen">
             <h1 className="text-left text-[#3E3F48] text-[20px] font-[700] h-[49px] border-b border-b-[#E5E5E6] pl-[24px] pt-[4px]">Inventory</h1>
             <div className="bg-white m-[24px] rounded-[4px] shadow-md">
-                {/* <div className="relative">
-                    <div className="flex absolute inset-y-0 left-0 items-center pl-3">
-                        <img className='w-[16.67px] h-[16.67px]' src={search} alt="Search Icon" />
-                    </div>
-                    <input type="text" className="w-[392px] h-10 pl-10 bg-[#F2F2F3] rounded-[8px]" placeholder="Search..." />
-                </div> */}
+                <div className="w-1/4 ml-[16px] py-[24px]">
+                    <SearchBar />
+                </div>
                 <div className="sm:-mx-6 lg:-mx-8">
-                    <div className=" align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                    <div className="align-middle inline-block min-w-full sm:px-6 lg:px-8">
                         <div className="shadow overflow-hidden sm:rounded-lg">
                             <table className="min-w-full">
                                 <thead className='bg-[#FDF4ED]'>
@@ -81,12 +79,10 @@ const Inventory = () => {
                                                 <div className="flex items-center">
                                                     <div className="text-[16px] text-[#3E3F48]">
                                                         {item?.Status}
-                                                        {
-                                                            item.Status === "Alright" ?
-                                                                <span className=' inline-block ml-[8px] bg-[#44C776] h-2 w-2 rounded-full'></span> :
-                                                                <span className=' inline-block ml-[8px] bg-[#F58A28] h-2 w-2 rounded-full'></span>
-                                                        }
-                                                        {/* <span className=' inline-block ml-[8px] bg-[#F52828] h-2 w-2 rounded-full'></span> */}
+
+                                                        {item.Status === "Alright" && <span className=' inline-block ml-[8px] bg-[#44C776] h-2 w-2 rounded-full'></span>}
+                                                        {item.Status === "In Progress" && <span className=' inline-block ml-[8px] bg-[#F58A28] h-2 w-2 rounded-full'></span>}
+                                                        {item.Status === "Out Of Stock" && <span className=' inline-block ml-[8px] bg-[#F52828] h-2 w-2 rounded-full'></span>}
                                                     </div>
                                                 </div>
                                             </td>
@@ -109,17 +105,10 @@ const Inventory = () => {
                                     ))}
                                 </tbody>
                             </table>
+                            <Pagination/>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
             </div>
         </div>
     );

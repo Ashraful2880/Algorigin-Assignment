@@ -9,7 +9,6 @@ import inventory from '../../../Images/inventory.png';
 import documents from '../../../Images/documents.png';
 import settings from '../../../Images/settings.png';
 
-
 const Dashboard = () => {
     return (
         <>
