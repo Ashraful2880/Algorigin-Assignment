@@ -12,7 +12,7 @@ import settings from '../../../Images/settings.png';
 const Dashboard = () => {
     return (
         <>
-            <main className="flex w-full h-full">
+            <main className="flex w-screen h-full">
                 <aside className="w-[235px] h-screen bg-[#F2F2F3] border-r border-r-[#E5E5E6] lg:inline-block md:inline-block hidden">
                     <Link
                         to="/dashboard"
@@ -39,7 +39,7 @@ const Dashboard = () => {
                         <span className="text-[14px] ml-[13px] lg:inline-block md:hidden">Settings</span>
                     </Link>
                 </aside>
-                <section className=" w-5/6">
+                <section className="lg:w-5/6 md:w-5/6 w-full">
                     <Routes>
                         <Route path="/dashboard" element={<DashboardHome />} />
                         <Route path="inventory" element={<Inventory />} />

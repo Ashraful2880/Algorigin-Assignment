@@ -23,10 +23,10 @@ const Inventory = () => {
                             <table className="min-w-full">
                                 <thead className='bg-[#FDF4ED]'>
                                     <tr>
-                                        <th scope="col" className="px-6 py-3 text-left">
+                                        <th scope="col" className="px-6 py-3 text-left hidden sm:block">
                                             <input type="checkbox" />
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48] hidden sm:block">
                                             <span>Date Updated</span>
                                             <img className="inline ml-[6px]" src={arrow} alt="arrow" />
                                         </th>
@@ -34,16 +34,16 @@ const Inventory = () => {
                                             <span>Title</span>
                                             <img className="inline ml-[4px]" src={arrow} alt="arrow" />
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48] hidden sm:block">
                                             Details
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
-                                            Status
+                                            <span className='hidden sm:block'>Status</span>
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
-                                            Quantity
+                                            <span className='hidden sm:block'>Quantity</span>
                                         </th>
-                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
+                                        <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48] hidden sm:block">
                                             Unit Price
                                         </th>
                                         <th scope="col" className="px-6 py-3 text-left text-[13px] text-[#3E3F48]">
@@ -55,12 +55,12 @@ const Inventory = () => {
                                 <tbody className="bg-white">
                                     {items.map((item, index) => (
                                         <tr key={index}>
-                                            <td className="px-6 py-4 whitespace-nowrap">
+                                            <td className="px-6 py-4 whitespace-nowrap hidden sm:block">
                                                 <div className="flex items-center">
                                                     <input type="checkbox" />
                                                 </div>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap">
+                                            <td className="px-6 py-4 whitespace-nowrap hidden sm:block">
                                                 <div className="flex items-center">
                                                     <div className=" text-[16px] text-[#3E3F48]">{item?.Date_Updated}</div>
                                                 </div>
@@ -70,15 +70,15 @@ const Inventory = () => {
                                                     <div className="text-[16px] text-[#3E3F48]">{item?.Title}</div>
                                                 </div>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap">
+                                            <td className="px-6 py-4 whitespace-nowrap hidden sm:block">
                                                 <div className="flex items-center">
                                                     <div className="text-[16px] text-[#3E3F48]">{item?.Details}</div>
                                                 </div>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap">
+                                            <td className="lg:px-6 md:px-6 sm:px-0 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
                                                     <div className="text-[16px] text-[#3E3F48]">
-                                                        {item?.Status}
+                                                        <span className='hidden sm:block'>{item?.Status}</span>
 
                                                         {item.Status === "Alright" && <span className=' inline-block ml-[8px] bg-[#44C776] h-2 w-2 rounded-full'></span>}
                                                         {item.Status === "In Progress" && <span className=' inline-block ml-[8px] bg-[#F58A28] h-2 w-2 rounded-full'></span>}
@@ -86,12 +86,12 @@ const Inventory = () => {
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap">
+                                            <td className="lg:px-6 md:px-6 sm:px-0 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
                                                     <div className="text-[16px] text-[#3E3F48]"> <span className="font-bold">{item?.Remaining}</span> / {item?.Quantity}</div>
                                                 </div>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap">
+                                            <td className="px-6 py-4 whitespace-nowrap hidden sm:block">
                                                 <div className="flex items-center">
                                                     <div className="text-[16px] text-[#3E3F48]">${item?.Unit_Price}</div>
                                                 </div>
@@ -105,7 +105,7 @@ const Inventory = () => {
                                     ))}
                                 </tbody>
                             </table>
-                            <Pagination/>
+                            <Pagination />
                         </div>
                     </div>
                 </div>
