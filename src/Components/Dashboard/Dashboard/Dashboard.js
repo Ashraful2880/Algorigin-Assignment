@@ -12,7 +12,7 @@ import settings from '../../../Images/settings.png';
 const Dashboard = () => {
     return (
         <>
-            <main className="flex w-screen h-full">
+            <main className="flex h-full w-[98vw] mx-auto">
                 <aside className=" lg:w-[14%] md:w-[8%] h-screen bg-[#F2F2F3] border-r border-r-[#E5E5E6] lg:inline-block md:inline-block hidden">
                     <Link
                         to="/dashboard"
