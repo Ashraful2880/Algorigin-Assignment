@@ -1,4 +1,3 @@
 ## Algorigin Assignment
-#### Live URL:
-#### Github Link:
+#### Live URL: https://algorizin-assignment.netlify.app/dashboard
 
