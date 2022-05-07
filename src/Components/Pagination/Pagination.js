@@ -5,7 +5,7 @@ import right from '../../Images/Right Arrow.png';
 
 const Pagination = () => {
     return (
-        <div className='pb-[40px] pt-[28px] lg:px-[16px] md:px-16 px-4'>
+        <div className='pb-[25px] pt-[28px] lg:px-[16px] md:px-16 px-4'>
             <div className=' flex lg:justify-between md:justify-between sm:justify-start'>
                 <div className='py-[6px] px-[8px] border border-[#B2B2B6] rounded-[4px] '>
                     <span className='text-[13px] text-[#88898E]'>10 Items per page</span>
